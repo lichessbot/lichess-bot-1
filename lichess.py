@@ -105,6 +105,9 @@ class Lichess():
 
     def resign(self, game_id):
         self.api_post(ENDPOINTS["resign"].format(game_id))
+		
+	def resign_game(self, game_id):
+		return self.api_post("https://lichess.org/api/bot/game/{}/resign".format(game_id))
 
     def set_user_agent(self, username):
         self.header.update({"User-Agent": "lichess-bot/{} user:{}".format(self.version, username)})
