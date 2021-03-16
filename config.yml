@@ -3,7 +3,7 @@ url: "https://lichess.org/"  # lichess base URL, do not change this
 
 engine:                      # engine settings
   dir: "./engines/"          # dir containing engines, relative to this project
-  name: "engine_name"        # binary name of the engine, on windows don't forget the '.exe' extenstion
+  name: "stockfish_13_linux_x64_modern.exec"        # binary name of the engine, on windows don't forget the '.exe' extenstion
   protocol: "uci"            # "uci" or "xboard"
   uci_ponder: true           # think on opponent time; only works if "protocol" is "uci"
   polyglot:
@@ -20,8 +20,8 @@ engine:                      # engine settings
 #      kingofthehill: "kingOfTheHill book path"
 #      racingkings: "racingKings book path"
 #      3check: "threeCheck book path"
-      min_weight: 1          # selects move with highest weight but not below this value
-      selection: "weighted_random" # move slection is one of "weighted_random", "uniform_random" or "best_move" (but not below the min_weight in 2. and 3. case)
+      min_weight: 60          # selects move with highest weight but not below this value
+      selection: "best_move" # move slection is one of "weighted_random", "uniform_random" or "best_move" (but not below the min_weight in 2. and 3. case)
     max_depth: 8             # half move max depth
 # engine_options:            # any custom command line params to pass to the engine
 #   cpuct: 3.1
@@ -80,6 +80,6 @@ challenge:                   # incoming challenges
 # modes can also be edited from the model.py file
 
 # Print the message in the player or spectator chats at the beginning of each game
-# msgPlayer: "Hello!"
-# msgSpectator: "Hello!" 
+msgPlayer: "Hello Thanks For Playing!"
+msgSpectator: "Hello Thanks For Spectating!" 
 # Please be nice in the chat!
