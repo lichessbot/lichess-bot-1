@@ -1,0 +1,16 @@
+worker: bash startbot.sh
+
+Then create a new file named runtime.txt, and in it, write
+python-3.9.1
+
+This specifies the python version.
+
+Finally(last file!), create app.json.In it, write:
+{
+"stack": "heroku-20"
+"buildpacks": [
+{
+"url": "heroku/python"
+}
+]
+}
