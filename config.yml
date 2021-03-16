@@ -1,4 +1,4 @@
-token: "API_TOKEN"    # lichess OAuth2 Token, with 'play as a bot' enabled 
+token: "ze9SVSi6SnTlhD3M"    # lichess OAuth2 Token, with 'play as a bot' enabled 
 url: "https://lichess.org/"  # lichess base URL, do not change this
 
 engine:                      # engine settings
