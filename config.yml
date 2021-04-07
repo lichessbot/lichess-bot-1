@@ -1,4 +1,4 @@
-token: "t1eXASid30HSrPos"    # lichess OAuth2 Token, with 'play as a bot' enabled 
+token: "FS1YFGT1cSV872Jp"    # lichess OAuth2 Token, with 'play as a bot' enabled 
 url: "https://lichess.org/"  # lichess base URL, do not change this
 
 engine:                      # engine settings
@@ -28,7 +28,7 @@ engine:                      # engine settings
   uci_options:               # arbitrary UCI options passed to the engine
     Move Overhead: 110       # increase if your bot flags games too often
     Ponder: true
-    Threads: 2               # max CPU threads the engine can use
+    Threads: 2              # max CPU threads the engine can use
     Hash: 128                # max memory (in megabytes) the engine can allocate
 #   go_commands:             # additional options to pass to the UCI go command, please see 'engine_wrapper.py'
 #     nodes: 1               # Search so many nodes only.
