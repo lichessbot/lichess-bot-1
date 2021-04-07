@@ -80,6 +80,6 @@ challenge:                   # incoming challenges
 # modes can also be edited from the model.py file
 
 # Print the message in the player or spectator chats at the beginning of each game
-msgPlayer: "Hello Thanks For Playing!"
-msgSpectator: "Hello Thanks For Spectating!" 
+#msgPlayer: "Hello Thanks For Playing!"
+#msgSpectator: "Hello Thanks For Spectating!" 
 # Please be nice in the chat!
